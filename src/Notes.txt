@@ -1,0 +1,12 @@
+Requirements:
+    - wrapper named #quote-box
+    - within #quote-box put an element with id #text (done)
+    - within #quote-box put an element with id #author (done)
+    - within #quote-box place a clickable element with id #new-quote (done)
+    - within #quote-box place clickable a element with id #tweet-quote (done)
+    - on first load it will display a random quote in element with id #text (done)
+    - on first load it will display author's name in element with id #author (done)
+    - when the #new-quote button is clicked it should fetch a new quote and place it in #text (done)
+    - when #new-quote button is clicked it should display a new value in #author (done)
+    - can tweet current quote by pressing the #tweet-quote a element. a element will include "twitter.com/intent/tweet" in href
+    - the #quote-box wrapper should be horizontally centered. Test with browsers zoom at 100% and page maximized (done)
