@@ -1,4 +1,6 @@
-import { BookCover } from "../components/BookCover";
+// import { BookCover } from "../components/BookCover";
+// import { LeftSide } from "../components/LeftSide";
+import { PageContainer } from "../components/PageContainer";
 
 export const Home = () => {
     return (
@@ -6,9 +8,12 @@ export const Home = () => {
             {/* Header */}
 
             {/* Quote Generator */}
+            <PageContainer />
+            {/* <LeftSide /> */}
+
 
             {/* Book Cover */}
-            <BookCover />
+            {/* <BookCover /> */}
 
             {/* Tweet */}
 
