@@ -1,4 +1,4 @@
-import { AuthorQuote } from "../data/AuthorQuotes";
+
 
 export const BookCover = () => {
     return (
