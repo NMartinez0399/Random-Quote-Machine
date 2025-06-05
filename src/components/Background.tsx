@@ -1,4 +1,4 @@
-export const UpperRight = () => {
+export const Background = () => {
     return (
         <div>
             <div className='background-top'></div>

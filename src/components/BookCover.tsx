@@ -1,3 +1,5 @@
+import { AuthorQuote } from "../data/AuthorQuotes";
+
 export const BookCover = () => {
     return (
         <section className='flex flex-col items-center h-screen justify-center relative'>
@@ -7,10 +9,16 @@ export const BookCover = () => {
                         <div className='col-span-1 flex border-r border-gray-400 py-64'></div>
                         <div className='col-span-11 flex flex-col justify-between p-6'>
                             <div className='mt-12 text-left space-y-8'>
-                                <p className="text-5xl mt-3 lg:text-6xl font-medium leading-none">
+                                <p 
+                                    className="text-5xl mt-3 lg:text-6xl font-medium leading-none"
+                                    id = 'author-quote'
+                                >
                                     Author Quote
                                 </p>
-                                <p className="text-m font-medium">
+                                <p 
+                                    className="text-m font-medium"
+                                    id = 'author-name'
+                                >
                                     Author Name
                                 </p>
                             </div>
