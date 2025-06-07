@@ -7,14 +7,17 @@
   --color-corner: var(--corner);
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-  --color-button: var(--button);
+  --color-twitterx: var(--twitterx);
 
   --animate-slide: slide 1.5s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+  --animate-slide-delay-1: slide 1.5s cubic-bezier(0.83, 0, 0.17, 1) 0.2s forwards;
+  --animate-slide-delay-2: slide 1.5s cubic-bezier(0.83, 0, 0.17, 1) 0.4s forwards;
+  --animate-fade-in: fade-in 1.5s ease-out 0.6s forwards;
 
   @keyframes slide {
     0% { 
       transform: translateX(100%); 
-      opacity: 0.1; 
+      opacity: 1; 
     }, 
     15% { 
       transform: translateX(50%); 
@@ -30,7 +33,17 @@
     }, 
     100% { 
       transform: translateX(-200%); 
-      opacity: 0.1; 
+      opacity: 1; 
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
 }
@@ -43,7 +56,7 @@
     --corner: #954C2E;
     --primary: #262523;
     --secondary: #f5f3f0;
-    --button: #9eb5ff;
+    --twitterx: #1DA1F2;
   }
   
   html {
@@ -52,6 +65,7 @@
 
   body {
     @apply bg-background text-primary transition-colors duration-300;
+    font-family: Garamond, serif;
   }
 }
 
@@ -81,8 +95,12 @@
   background-image: linear-gradient(0deg, #131D4F 0%, #131D4F 13%,#1d2759 13%, #1d2759 42%,#273163 42%, #273163 49%,#313b6d 49%, #313b6d 58%,#072f52 58%, #072f52 69%,#11395c 69%, #11395c 74%,#1b4366 74%, #1b4366 78%,#254D70 78%, #254D70 100%);
 }
 
-@utility button-style {
+@utility quote-button {
   @apply px-6 py-2 rounded-full bg-decoration text-secondary font-medium transition-all duration-300 hover:scale-105;
+}
+
+@utility share-button {
+  @apply px-6 py-2 rounded-full bg-twitterx text-secondary font-medium transition-all duration-300 hover:scale-105;
 }
 
 @utility background-top {
